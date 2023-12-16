@@ -5,6 +5,7 @@ private:
 	double _x, _y, _r, lenght = 0, square = 0;
 	int _k, _z, _s; //красный, зеленый, синий - поэтому k, z, s :)
 public:
+	Krug();
 	Krug(double x, double y, double r, int k, int z, int s);
 	//getters
 	double getX();

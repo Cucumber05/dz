@@ -5,7 +5,15 @@
 #define PI 3.14
 #include "Krug_class.h"
 
-Krug:: Krug(double x, double y, double r, int k, int z, int s) {
+Krug::Krug() {
+    _x = 0;
+    _y = 0;
+    _r = 0;
+    _k = 0;
+    _z = 0;
+    _s = 0;
+}
+Krug::Krug(double x, double y, double r, int k, int z, int s) {
 	_x = x;
 	_y = y;
 	_r = r;
