@@ -2,7 +2,7 @@
 
 class Krug {
 private:
-	double _x, _y, _r, lenght, square;
+	double _x, _y, _r, lenght = 0, square = 0;
 	int _k, _z, _s; //красный, зеленый, синий - поэтому k, z, s :)
 public:
 	Krug(double x, double y, double r, int k, int z, int s);
@@ -15,7 +15,7 @@ public:
 	void SetX(double x);
 	void SetY(double y);
 	void SetR(double r);
-	//void SetColor(int k, int z, int s);
+	void Set_Color(int k, int z, int s);
 
 	//methods
 	double Krug_Lenght();

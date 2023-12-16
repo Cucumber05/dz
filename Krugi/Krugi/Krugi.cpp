@@ -1,6 +1,4 @@
 ﻿// Krugi.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//2 вопроса, я уже не понмю задание, но вроде бы радиус пользователь тоже вводит, хотя логичнее если будет программа высчитывать, но я об это подумала только под конец, так что, если надо, могу переделать этот момент
-// второй вопрос, у меня не реализуется функция установления цвета  //circle1.Set_Color(R, G, B); я ее везде закомментировала,с ней не работает, ошибки с конструктором и с сетколор появляются,я почитала в чем проблемы могут быть, одна из причин, что кол-во аргументов не совпадает, как-то с выделением памяти связано, но у меня совпадает, пока больше не нашла, не могу нормально сформулировать вопрос, чтобы в интернете найти, подскажите пожалуйста
 
 #include <iostream>
 #include <string>
@@ -52,12 +50,13 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            //circle1.Set_Color(R, G, B);
+                            circle1.Set_Color(R, G, B);
                             break;
                         case 5:
                             circle1.Krug_Color();
                             break;
                         case 6:
+                        {//только этот кейс взяла в скобки фигурные, так как инчае ошибка C2361 https://learn.microsoft.com/ru-ru/cpp/error-messages/compiler-errors-1/compiler-error-c2361?view=msvc-170&f1url=%3FappId%3DDev16IDEF1%26l%3DRU-RU%26k%3Dk(C2361)%26rd%3Dtrue
                             std::cout << "Введите новое значение х" << std::endl;
                             std::cin >> x;
                             std::cout << "Введите новое значение y" << std::endl;
@@ -68,12 +67,12 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            circle1.SetX(x);
+                            /*circle1.SetX(x);
                             circle1.SetY(y);
                             circle1.SetR(r);
-                            //circle1.Set_Color(R, G, B);
-                            //Krug circle1(x, y, r, R, G, B); 
-                            break;
+                            circle1.Set_Color(R, G, B);*/
+                            Krug circle1(x, y, r, R, G, B);
+                            break; }
                         default:
                             break;
                         }
@@ -110,12 +109,13 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            //circle3.Set_Color(R, G, B);
+                            circle3.Set_Color(R, G, B);
                             break;
                         case 5:
                             circle3.Krug_Color();
                             break;
-                        case 6:
+                        case 6: 
+                        {
                             std::cout << "Введите новое значение х" << std::endl;
                             std::cin >> x;
                             std::cout << "Введите новое значение y" << std::endl;
@@ -126,12 +126,13 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            circle3.SetX(x);
+                            /*circle3.SetX(x);
                             circle3.SetY(y);
                             circle3.SetR(r);
-                            //circle3.Set_Color(R, G, B);
-                            //Circle circle3(x, y, r, R, G, B); 
+                            circle3.Set_Color(R, G, B);*/
+                            Krug circle3(x, y, r, R, G, B);
                             break;
+                        }
                         default:
                             break;
                         }
@@ -169,12 +170,13 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            //circle2.Set_Color(R, G, B);
+                            circle2.Set_Color(R, G, B);
                             break;
                         case 5:
                             circle2.Krug_Color();
                             break;
                         case 6:
+                        {
                             std::cout << "Введите новое значение х" << std::endl;
                             std::cin >> x;
                             std::cout << "Введите новое значение y" << std::endl;
@@ -185,12 +187,12 @@ int main()
                             std::cin >> R;
                             std::cin >> G;
                             std::cin >> B;
-                            circle2.SetX(x);
+                            /*circle2.SetX(x);
                             circle2.SetY(y);
                             circle2.SetR(r);
-                            //circle2.Set_Color(R, G, B);
-                            //Circle circle2(x, y, r, R, G, B); 
-                            break;
+                            circle2.Set_Color(R, G, B);*/
+                            Krug circle2(x, y, r, R, G, B);
+                            break; }
                         default:
                             break;
                         }

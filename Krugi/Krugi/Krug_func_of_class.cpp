@@ -38,11 +38,11 @@ void Krug::SetY(double y) {
 void Krug::SetR(double r) {
     _r = r;
 }
-//void Krug::SetColor(int k, int z, int s) {
-//    _k = k;
-//    _z = z;
-//    _s = s;
-//}
+void Krug::Set_Color(int k, int z, int s) {
+    _k = k;
+    _z = z;
+    _s = s;
+}
 
 //methods
 double Krug::Krug_Lenght() {

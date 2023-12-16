@@ -1,6 +1,6 @@
 X: 1
-Y: 5656
-Radius: 124
+Y: 2
+Radius: 2
 Color: rgb(34,45,56)
-Length: 778.72
-Square: 48280.6
+Length: 12.56
+Square: 12.56
